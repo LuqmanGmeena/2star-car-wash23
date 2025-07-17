@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Calendar, Clock, Car, User, Phone, Mail, MapPin, CreditCard } from 'lucide-react';
+import BookingConfirmation from '../components/BookingConfirmation';
 
 const Booking = () => {
   const location = useLocation();
   const selectedService = location.state?.selectedService || '';
   
+  const [showConfirmation, setShowConfirmation] = useState(false);
   const [formData, setFormData] = useState({
     service: selectedService,
     date: '',
@@ -50,9 +52,7 @@ const Booking = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Booking submitted:', formData);
-    alert('Booking submitted successfully! We will contact you shortly to confirm your appointment.');
+    setShowConfirmation(true);
   };
 
   return (
@@ -320,6 +320,14 @@ const Booking = () => {
           </div>
         </div>
       </section>
+
+      {/* Booking Confirmation Modal */}
+      {showConfirmation && (
+        <BookingConfirmation
+          bookingData={formData}
+          onClose={() => setShowConfirmation(false)}
+        />
+      )}
     </div>
   );
 };

@@ -46,6 +46,7 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
+            <div className="flex items-center space-x-4">
             <a
               href="tel:+255713366464"
               className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200 flex items-center space-x-2"
@@ -53,6 +54,15 @@ const Navbar = () => {
               <Phone className="h-4 w-4" />
               <span>Call Now</span>
             </a>
+            <a
+              href="https://wa.me/255713366464"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors duration-200"
+            >
+              WhatsApp
+            </a>
+            </div>
           </div>
 
           {/* Mobile menu button */}

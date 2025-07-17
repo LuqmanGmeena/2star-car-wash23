@@ -8,6 +8,7 @@ import Booking from './pages/Booking';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
+import LiveChat from './components/LiveChat';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
         </Routes>
         <Footer />
+        <LiveChat />
       </div>
     </Router>
   );

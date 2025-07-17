@@ -27,6 +27,14 @@ const Footer = () => {
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
                 <Facebook className="h-6 w-6" />
               </a>
+              <a 
+                href="https://wa.me/255713366464" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-white transition-colors"
+              >
+                <Phone className="h-6 w-6" />
+              </a>
             </div>
           </div>
 
