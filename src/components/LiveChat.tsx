@@ -32,6 +32,8 @@ const LiveChat = () => {
     "how do i book": "You can book a service by clicking the 'Book Now' button on our website, calling us at +255 713 366464, or messaging us on WhatsApp. Which method would you prefer?",
     "what areas": "We provide mobile car wash services throughout Dar es Salaam and surrounding areas. We come to your location! Where are you located?",
     "vip package": "Our VIP Complete Package includes full exterior wash & wax, complete interior detailing, engine bay cleaning, tire shine & dressing, paint protection, air freshener, and comes with a quality guarantee. It's our most comprehensive service!",
+    "instagram": "Follow us on Instagram @2star_car_wash to see our latest work, customer transformations, and special offers!",
+    "social media": "You can find us on Instagram @2star_car_wash and Facebook. We regularly post before/after photos and special promotions!",
     "default": "Thank you for your question! For immediate assistance, please call us at +255 713 366464 or WhatsApp us. Our team will be happy to help you with detailed information about our services."
   };
 

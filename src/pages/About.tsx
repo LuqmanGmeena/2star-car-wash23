@@ -94,6 +94,17 @@ const About = () => {
                   from quick express washes to comprehensive detailing services. Our success is 
                   built on trust, quality, and the relationships we've formed with our community.
                 </p>
+                <div className="flex items-center space-x-4 pt-4">
+                  <span className="text-gray-700 font-medium">Follow our journey:</span>
+                  <a
+                    href="https://instagram.com/2star_car_wash"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-700 font-medium"
+                  >
+                    <span>@2star_car_wash</span>
+                  </a>
+                </div>
               </div>
             </div>
             <div className="bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl p-8 h-96 flex items-center justify-center">

@@ -209,6 +209,18 @@ const Gallery = () => {
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
             Book your appointment today and experience the same quality service showcased in our gallery.
           </p>
+          <p className="text-lg text-blue-200 mb-6">
+            Follow us on Instagram 
+            <a 
+              href="https://instagram.com/2star_car_wash" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="font-semibold hover:text-white transition-colors ml-1"
+            >
+              @2star_car_wash
+            </a> 
+            {" "}for more photos and updates!
+          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/booking"
@@ -221,6 +233,14 @@ const Gallery = () => {
               className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold transition-colors duration-300"
             >
               View Services
+            </a>
+            <a
+              href="https://instagram.com/2star_car_wash"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold transition-colors duration-300"
+            >
+              Follow on Instagram
             </a>
           </div>
         </div>

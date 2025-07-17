@@ -21,10 +21,20 @@ const Footer = () => {
               Your car deserves the best care, and we deliver it with passion and precision.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+              <a 
+                href="https://instagram.com/2star_car_wash" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-white transition-colors"
+              >
                 <Instagram className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+              <a 
+                href="https://facebook.com/2starcarwash" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-white transition-colors"
+              >
                 <Facebook className="h-6 w-6" />
               </a>
               <a 

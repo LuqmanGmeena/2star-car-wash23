@@ -261,6 +261,44 @@ const Contact = () => {
                   </a>
                 </div>
               </div>
+
+              {/* Social Media */}
+              <div className="bg-white rounded-xl shadow-lg p-8">
+                <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                  <span>Follow Us</span>
+                </h3>
+                <div className="space-y-4">
+                  <a
+                    href="https://instagram.com/2star_car_wash"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-3 p-4 bg-pink-50 rounded-lg hover:bg-pink-100 transition-colors duration-200"
+                  >
+                    <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                      <span className="text-white font-bold text-sm">IG</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-900">Instagram</p>
+                      <p className="text-sm text-gray-600">@2star_car_wash</p>
+                    </div>
+                  </a>
+                  
+                  <a
+                    href="https://facebook.com/2starcarwash"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-3 p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors duration-200"
+                  >
+                    <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                      <span className="text-white font-bold text-sm">f</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-900">Facebook</p>
+                      <p className="text-sm text-gray-600">2Star Car Wash</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
