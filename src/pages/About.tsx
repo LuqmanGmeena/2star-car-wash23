@@ -34,12 +34,12 @@ const About = () => {
       description: "Passionate about automotive care with over 5 years of industry experience."
     },
     {
-      name: "Fatuma Ally",
+      name: "Mchuga",
       role: "Operations Manager",
       description: "Ensures smooth operations and maintains our high service standards."
     },
     {
-      name: "Juma Mwalimu",
+      name: "Bigi",
       role: "Lead Technician",
       description: "Expert in vehicle detailing with specialized training in paint protection."
     }
