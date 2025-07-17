@@ -23,7 +23,7 @@ const ServiceTracker = () => {
       status: 'on-way',
       estimatedTime: '15 minutes',
       currentStep: 'Our team is on the way to your location',
-      customerName: 'John Doe',
+      customerName: 'Mwijaku Hassan',
       service: 'VIP Complete Package',
       location: 'Kigamboni, Dar es Salaam'
     },
@@ -32,7 +32,7 @@ const ServiceTracker = () => {
       status: 'in-progress',
       estimatedTime: '30 minutes',
       currentStep: 'Currently washing your vehicle',
-      customerName: 'Jane Smith',
+      customerName: 'Amina Juma',
       service: 'Exterior Wash',
       location: 'Mikocheni, Dar es Salaam'
     }

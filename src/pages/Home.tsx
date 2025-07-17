@@ -32,18 +32,18 @@ const Home = () => {
 
   const testimonials = [
     {
-      name: "Nechar mwangi",
+      name: "Mwijaku Mwalimu",
       text: "Exceptional service! My car looks brand new every time.",
       rating: 5
     },
     {
-      name: "Mary Wanjiku",
+      name: "Amina Juma",
       text: "Professional team and great attention to detail. Highly recommended!",
       rating: 5
     },
     {
-      name: "David Ochieng",
-      text: "Best car wash in Nairobi. Quality service at fair prices.",
+      name: "Hassan Mwinyimkuu",
+      text: "Best car wash in Dar es Salaam. Quality service at fair prices.",
       rating: 5
     }
   ];

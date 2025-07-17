@@ -29,17 +29,17 @@ const About = () => {
 
   const team = [
     {
-      name: "James Mwangi",
+      name: "Goodluck Meena",
       role: "Founder & CEO",
       description: "Passionate about automotive care with over 5 years of industry experience."
     },
     {
-      name: "Sarah Njeri",
+      name: "Fatuma Ally",
       role: "Operations Manager",
       description: "Ensures smooth operations and maintains our high service standards."
     },
     {
-      name: "David Kiprotich",
+      name: "Juma Mwalimu",
       role: "Lead Technician",
       description: "Expert in vehicle detailing with specialized training in paint protection."
     }

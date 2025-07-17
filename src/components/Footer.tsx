@@ -22,7 +22,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://instagram.com/2star_car_wash" 
+                href="https://instagram.com/2star_car_wash"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white transition-colors"
@@ -30,7 +30,7 @@ const Footer = () => {
                 <Instagram className="h-6 w-6" />
               </a>
               <a 
-                href="https://facebook.com/2starcarwash" 
+                href="https://facebook.com/2star_car_wash"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white transition-colors"
@@ -58,7 +58,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-300">info@2starcarwash.com</span>
+                <span className="text-gray-300">bimoga77@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-blue-400" />

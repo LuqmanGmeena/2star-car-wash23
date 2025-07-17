@@ -8,6 +8,7 @@ import Booking from './pages/Booking';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
+import Admin from './pages/Admin';
 import LiveChat from './components/LiveChat';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
         <Footer />
         <LiveChat />

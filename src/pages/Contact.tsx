@@ -41,8 +41,8 @@ const Contact = () => {
     {
       icon: <Mail className="h-6 w-6 text-blue-600" />,
       title: "Email",
-      details: ["info@2starcarwash.com", "bookings@2starcarwash.com"],
-      action: "mailto:info@2starcarwash.com"
+      details: ["bimoga77@gmail.com", "bookings@2starcarwash.com"],
+      action: "mailto:bimoga77@gmail.com"
     },
     {
       icon: <MapPin className="h-6 w-6 text-blue-600" />,
@@ -250,7 +250,7 @@ const Contact = () => {
                   </a>
                   
                   <a
-                    href="mailto:info@2starcarwash.com"
+                    href="mailto:bimoga77@gmail.com"
                     className="flex items-center space-x-3 p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors duration-200"
                   >
                     <Mail className="h-6 w-6 text-blue-600" />
@@ -284,7 +284,7 @@ const Contact = () => {
                   </a>
                   
                   <a
-                    href="https://facebook.com/2starcarwash"
+                    href="https://facebook.com/2star_car_wash"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors duration-200"
@@ -294,7 +294,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">Facebook</p>
-                      <p className="text-sm text-gray-600">2Star Car Wash</p>
+                      <p className="text-sm text-gray-600">@2star_car_wash</p>
                     </div>
                   </a>
                 </div>
