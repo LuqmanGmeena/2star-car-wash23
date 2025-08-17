@@ -2,12 +2,15 @@ import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Calendar, Clock, Car, User, Phone, Mail, MapPin, CreditCard } from 'lucide-react';
 import BookingConfirmation from '../components/BookingConfirmation';
+import OTPVerification from '../components/OTPVerification';
 
 const Booking = () => {
   const location = useLocation();
   const selectedService = location.state?.selectedService || '';
   
   const [showConfirmation, setShowConfirmation] = useState(false);
+  const [showOTP, setShowOTP] = useState(false);
+  const [isPhoneVerified, setIsPhoneVerified] = useState(false);
   const [formData, setFormData] = useState({
     service: selectedService,
     date: '',
@@ -52,7 +55,19 @@ const Booking = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setShowConfirmation(true);
+    if (!isPhoneVerified) {
+      setShowOTP(true);
+    } else {
+      setShowConfirmation(true);
+    }
+  };
+
+  const handleOTPVerified = (verified: boolean) => {
+    if (verified) {
+      setIsPhoneVerified(true);
+      setShowOTP(false);
+      setShowConfirmation(true);
+    }
   };
 
   return (
@@ -310,16 +325,28 @@ const Booking = () => {
                   className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors duration-300 flex items-center space-x-2 mx-auto"
                 >
                   <CreditCard className="h-5 w-5" />
-                  <span>Confirm Booking</span>
+                  <span>{isPhoneVerified ? 'Confirm Booking' : 'Verify & Book'}</span>
                 </button>
                 <p className="text-sm text-gray-600 mt-4">
-                  We'll contact you within 30 minutes to confirm your appointment details.
+                  {isPhoneVerified ? 
+                    "We'll contact you within 30 minutes to confirm your appointment details." :
+                    "We'll send you an OTP code to verify your phone number first."
+                  }
                 </p>
               </div>
             </form>
           </div>
         </div>
       </section>
+
+      {/* OTP Verification Modal */}
+      {showOTP && (
+        <OTPVerification
+          phoneNumber={formData.phone}
+          onVerified={handleOTPVerified}
+          onClose={() => setShowOTP(false)}
+        />
+      )}
 
       {/* Booking Confirmation Modal */}
       {showConfirmation && (
