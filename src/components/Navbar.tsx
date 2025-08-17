@@ -22,13 +22,13 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" className="flex flex-col items-center">
             <img 
               src="/2star logo.jpg" 
               alt="2Star Car Wash" 
               className="h-10 w-10 object-contain"
             />
-            <span className="text-xl font-bold text-gray-900">2Star Car Wash</span>
+            <span className="text-sm font-bold text-gray-900 mt-1">2Star Car Wash</span>
           </Link>
 
           {/* Desktop Navigation */}
