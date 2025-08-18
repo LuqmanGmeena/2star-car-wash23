@@ -26,11 +26,11 @@ const PriceCalculator = () => {
   };
 
   const addOnServices = {
-    'Air Freshener': 5000,
-    'Tire Shine': 5000,
-    'Dashboard Polish': 5000,
-    'Leather Conditioning': 5000,
-    'Paint Protection': 5000
+    'Extra Services': 5000,
+    'Additional Care': 5000,
+    'Premium Add-ons': 5000,
+    'Special Treatment': 5000,
+    'Enhanced Cleaning': 5000
   };
 
   useEffect(() => {

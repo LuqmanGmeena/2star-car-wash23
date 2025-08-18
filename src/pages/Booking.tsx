@@ -23,8 +23,19 @@ const Booking = () => {
     email: '',
     location: '',
     paymentMethod: 'cash',
-    specialRequests: ''
+    specialRequests: '',
+    addOns: []
   });
+
+  const [selectedAddOns, setSelectedAddOns] = useState<string[]>([]);
+
+  const addOnOptions = [
+    'Extra Cleaning',
+    'Premium Care',
+    'Special Treatment',
+    'Additional Service',
+    'Enhanced Detail'
+  ];
 
   const services = [
     'Express Wash',
@@ -51,6 +62,14 @@ const Booking = () => {
       ...prev,
       [name]: value
     }));
+  };
+
+  const handleAddOnChange = (addOn: string) => {
+    setSelectedAddOns(prev => 
+      prev.includes(addOn) 
+        ? prev.filter(item => item !== addOn)
+        : [...prev, addOn]
+    );
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -108,12 +127,12 @@ const Booking = () => {
                         required
                       />
                       <div className={`p-4 border-2 rounded-lg cursor-pointer transition-all duration-200 ${
-                        formData.service === service
-                          ? 'border-blue-500 bg-blue-50'
+                        checked={selectedAddOns.includes(addOn)}
+                        onChange={() => handleAddOnChange(addOn)}
                           : 'border-gray-200 hover:border-gray-300'
                       }`}>
                         <span className="font-medium text-gray-900">{service}</span>
-                      </div>
+                      <span className="text-gray-500 text-sm">+TZSH 5,000</span>
                     </label>
                   ))}
                 </div>
@@ -306,10 +325,10 @@ const Booking = () => {
               {/* Special Requests */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Special Requests or Notes (Optional)
+                  Extra Services (Optional)
                 </label>
                 <textarea
-                  name="specialRequests"
+                  {addOnOptions.map((addOn, index) => (
                   value={formData.specialRequests}
                   onChange={handleInputChange}
                   rows={4}
